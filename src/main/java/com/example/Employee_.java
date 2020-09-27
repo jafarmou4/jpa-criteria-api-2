@@ -1,5 +1,6 @@
 package com.example;
 
+import javax.persistence.metamodel.ListAttribute;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
@@ -7,7 +8,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 public abstract class Employee_ {
     public static volatile SingularAttribute<Employee, String> name;
     public static volatile SingularAttribute<Employee, Long> id;
-    public static volatile SingularAttribute<Employee, Task> tasks;
+    public static volatile ListAttribute<Employee, Task> tasks;
     public static final String NAME = "name";
     public static final String ID = "id";
     public static final String TASKS = "tasks";
